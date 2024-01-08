@@ -6,28 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f49f6ba-24cf-40a6-b181-42c9a151b9ef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/img/channel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/install.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/openmims.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/MyPlugin_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/MyPlugin_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GT_2_patches_3_1_3.tif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GaussFiltering.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/haibolab/nanosimsStabilize/DJL_Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/haibolab/nanosimsStabilize/OpticalFlowEstimator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/haibolab/nanosimsStabilize/OpticalFlowEstimator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/haibolab/nanosimsStabilize/OpticalFlowTranslator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/haibolab/nanosimsStabilize/OpticalFlowTranslatorArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/haibolab/nanosimsStabilize/OpticalFlowTranslatorArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/haibolab/nanosimsStabilize/Stabilize2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/haibolab/nanosimsStabilize/StabilizeOpenMims.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/haibolab/nanosimsStabilize/StabilizeOpenMims.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/haibolab/nanosimsStabilize/WarpTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/haibolab/nanosimsStabilize/WarpTranslator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/haibolab/nanosimsStabilize/torch_test2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/haibolab/nanosimsStabilize/vEMStabilize.java" beforeDir="false" />
-    </list>
+    <list default="true" id="5f49f6ba-24cf-40a6-b181-42c9a151b9ef" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
