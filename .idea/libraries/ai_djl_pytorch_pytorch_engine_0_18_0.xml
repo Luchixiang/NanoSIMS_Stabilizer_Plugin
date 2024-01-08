@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="ai.djl.pytorch:pytorch-engine:0.18.0" type="repository">
+    <properties maven-id="ai.djl.pytorch:pytorch-engine:0.18.0" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/ai/djl/pytorch/pytorch-engine/0.18.0/pytorch-engine-0.18.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/ai/djl/api/0.18.0/api-0.18.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.9.0/gson-2.9.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/net/java/dev/jna/jna/5.11.0/jna-5.11.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

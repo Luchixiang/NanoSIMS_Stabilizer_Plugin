@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="MyPlugin:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5f49f6ba-24cf-40a6-b181-42c9a151b9ef" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/img/channel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/install.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/openmims.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/MyPlugin_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/MyPlugin_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GT_2_patches_3_1_3.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GaussFiltering.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/haibolab/nanosimsStabilize/DJL_Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/haibolab/nanosimsStabilize/OpticalFlowEstimator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/haibolab/nanosimsStabilize/OpticalFlowEstimator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/haibolab/nanosimsStabilize/OpticalFlowTranslator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/haibolab/nanosimsStabilize/OpticalFlowTranslatorArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/haibolab/nanosimsStabilize/OpticalFlowTranslatorArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/haibolab/nanosimsStabilize/Stabilize2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/haibolab/nanosimsStabilize/StabilizeOpenMims.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/haibolab/nanosimsStabilize/StabilizeOpenMims.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/haibolab/nanosimsStabilize/WarpTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/haibolab/nanosimsStabilize/WarpTranslator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/haibolab/nanosimsStabilize/torch_test2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/haibolab/nanosimsStabilize/vEMStabilize.java" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2U0rNs0OhDqWEu64YOJ44DSemcK" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/img" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.34712642" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/img" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/resources" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/mycompany/imagej" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.torch_test2 (1)">
+    <configuration name="torch_test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mycompany.imagej.torch_test" />
+      <module name="NanoSIMS stabilizer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mycompany.imagej.NanosimsTranslator" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="torch_test2 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.haibolab.nanosimsStabilize.torch_test2" />
+      <module name="NanoSIMS stabilizer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.haibolab.nanosimsStabilize.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="torch_test2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mycompany.imagej.torch_test2" />
+      <module name="NanoSIMS stabilizer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mycompany.imagej.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="torch_test3 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.haibolab.nanosimsStabilize.torch_test3" />
+      <module name="NanoSIMS stabilizer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.haibolab.nanosimsStabilize.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="torch_test3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mycompany.imagej.torch_test3" />
+      <module name="NanoSIMS stabilizer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mycompany.imagej.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="NanoSIMS stabilizer" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <module name="NanoSIMS stabilizer" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.torch_test2 (1)" />
+        <item itemvalue="Application.torch_test3 (1)" />
+        <item itemvalue="Application.torch_test2" />
+        <item itemvalue="Application.torch_test3" />
+        <item itemvalue="Application.torch_test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5f49f6ba-24cf-40a6-b181-42c9a151b9ef" name="Default Changelist" comment="" />
+      <created>1692087301414</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1692087301414</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

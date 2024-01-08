@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="net.imagej:ij:1.52o" type="repository">
+    <properties maven-id="net.imagej:ij:1.52o" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/net/imagej/ij/1.52o/ij-1.52o.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
