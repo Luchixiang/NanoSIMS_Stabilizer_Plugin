@@ -24,4 +24,4 @@ Please note that we don't support macOS < 11.
 
    ![image-20240108200232561](./img/channel.png)
 
-5. finish correction. 
+5. Correction Done. 
