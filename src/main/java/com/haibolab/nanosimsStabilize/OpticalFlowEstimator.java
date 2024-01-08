@@ -19,6 +19,15 @@ import java.util.List;
 
 public class OpticalFlowEstimator {
 
+    private Model optical_model;
+
+    public OpticalFlowEstimator() throws IOException, MalformedModelException {
+        Path modelPath = Util.getResourcePath("raft_model.zip");
+        this.optical_model= Model.newInstance("RAFT");
+        this.optical_model.load(modelPath);
+    }
+
+
     public static float[] Warp(NDArray image, NDArray flow, Model model) throws IOException, MalformedModelException, TranslateException {
 
         WarpTranslatorArray translator = new WarpTranslatorArray();
@@ -39,29 +48,14 @@ public class OpticalFlowEstimator {
             return warpedImage;
         }
     }
-    public static float[] generateOpticalFlow(NDArray gtImg, NDArray wfImg) throws IOException, ModelException, TranslateException {
+    public float[] generateOpticalFlow(NDArray gtImg, NDArray wfImg) throws IOException, ModelException, TranslateException {
         // Load the model
-        Path modelPath = Util.getResourcePath("raft_model.zip");
-        Model model = Model.newInstance("RAFT");
-        model.load(modelPath);
         OpticalFlowTranslatorArray translator = new OpticalFlowTranslatorArray();
-        Predictor<Pair<NDArray, NDArray>, float[]> predictor = model.newPredictor(translator, Device.cpu());
+        Predictor<Pair<NDArray, NDArray>, float[]> predictor = this.optical_model.newPredictor(translator, Device.cpu());
         try (NDManager manager = NDManager.newBaseManager()) {
             // Predict the optical flow
             float[] opticalFlow = predictor.predict(new Pair<>(gtImg, wfImg));
             return opticalFlow;
         }
-    }
-    public static List<float[]> generateOpticalFlowList(List<Pair<NDArray, NDArray>> imgs) throws IOException, ModelException, TranslateException {
-        // Load the model
-        Path modelPath = Util.getResourcePath("raft_model.zip");
-        Model model = Model.newInstance("RAFT", Device.cpu());
-        model.load(modelPath);
-        OpticalFlowTranslatorArray translator = new OpticalFlowTranslatorArray();
-        Predictor<Pair<NDArray, NDArray>, float[]> predictor = model.newPredictor(translator,Device.cpu());
-
-        List<float[]> opticalFlow = predictor.batchPredict(imgs);
-        return opticalFlow;
-
     }
 }

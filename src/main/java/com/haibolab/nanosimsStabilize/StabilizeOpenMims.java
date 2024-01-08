@@ -147,6 +147,7 @@ public class StabilizeOpenMims<T extends RealType<T>> implements Command {
         Model modelBilinear = getBilinearModel();
         Model modelNearest = getNearestModel();
         MimsPlus[] openMimsImages = uiinstance.getOpenMassImages();
+        OpticalFlowEstimator opticalFlowEstimator = new OpticalFlowEstimator();
         List<RandomAccessibleInterval<T>> openImgRai = new ArrayList<>();
         ImagePlus image = openMimsImages[0];
         int baseChannel = 0;
@@ -161,7 +162,6 @@ public class StabilizeOpenMims<T extends RealType<T>> implements Command {
 
 //         (Img<T>) currentData.getImgPlus();
         long[] dimensions = openImgRai.get(0).dimensionsAsLongArray();
-
         NDList outputSequence = new NDList((int) dimensions[2]);
         NDList channelSequence = new NDList(openMimsImages.length);
         for (int channelIndex = 0; channelIndex < openMimsImages.length; channelIndex++) {
@@ -178,7 +178,7 @@ public class StabilizeOpenMims<T extends RealType<T>> implements Command {
             NDArray wfImgArray = Util.intervalViewToNDArray(wfImg, manager);
             NDArray gtImgArray = outputSequence.get(outputSequence.size() - 1).get(":, :," + baseChannel);
             try {
-                float[] opticalFlowList = OpticalFlowEstimator.generateOpticalFlow(gtImgArray, wfImgArray);
+                float[] opticalFlowList = opticalFlowEstimator.generateOpticalFlow(gtImgArray, wfImgArray);
 
                 NDArray opticalFlowArray = manager.create(opticalFlowList).reshape(2, dimensions[0], dimensions[1]);
 
