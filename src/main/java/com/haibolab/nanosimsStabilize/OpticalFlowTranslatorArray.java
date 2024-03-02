@@ -27,7 +27,7 @@ class OpticalFlowTranslatorArray implements Translator<Pair<NDArray, NDArray>, f
 
     @Override
     public float[] processOutput(TranslatorContext ctx, NDList list) {
-        NDArray flowArray = list.get(1);
+        NDArray flowArray = list.get(0);
         //        Image optical_flow = ImageFactory.getInstance().fromNDArray(flow);
         return flowArray.toFloatArray();
     }

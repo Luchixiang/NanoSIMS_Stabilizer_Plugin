@@ -11,64 +11,53 @@ package com.haibolab.nanosimsStabilize;
 import ai.djl.Device;
 import ai.djl.MalformedModelException;
 import ai.djl.ModelException;
-import ai.djl.engine.Engine;
 import ai.djl.ndarray.NDArray;
 import ai.djl.ndarray.NDArrays;
 import ai.djl.ndarray.NDList;
 import ai.djl.ndarray.NDManager;
-import ai.djl.ndarray.index.NDIndex;
-import ai.djl.translate.Batchifier;
+
 import ai.djl.translate.TranslateException;
-import ai.djl.util.Pair;
+
 import com.nrims.MimsPlus;
+import com.nrims.ContrastAdjuster;
 import ij.gui.GenericDialog;
 import io.scif.*;
-import io.scif.config.SCIFIOConfig;
-import io.scif.img.ImgSaver;
+
 import io.scif.services.DatasetIOService;
 import io.scif.services.FormatService;
 import net.imagej.*;
-import net.imagej.axis.Axes;
-import net.imagej.axis.DefaultLinearAxis;
-import net.imagej.axis.VariableAxis;
+
 import net.imagej.display.ImageDisplayService;
 import net.imagej.ops.OpService;
-import net.imglib2.RandomAccessible;
+
 import net.imglib2.RandomAccessibleInterval;
-import net.imglib2.img.Img;
+
 import net.imglib2.img.display.imagej.ImageJFunctions;
 import net.imglib2.type.numeric.RealType;
 import ij.ImagePlus;
-import ij.WindowManager;
+
 
 import net.imglib2.view.IntervalView;
-import net.imglib2.view.Views;
+
 import org.scijava.app.StatusService;
 import org.scijava.command.Command;
-import org.scijava.io.IOService;
 import org.scijava.io.location.LocationService;
 import org.scijava.log.LogService;
 import org.scijava.plugin.Parameter;
 import org.scijava.plugin.Plugin;
-import org.scijava.io.location.Location;
 
 import org.scijava.ui.DialogPrompt;
 import org.scijava.ui.UIService;
-import net.imglib2.Cursor;
+
 import ai.djl.Model;
-import net.imglib2.img.WrappedImg;
-import net.imglib2.type.numeric.real.FloatType;
-//import com.nrims.MimsPlus;
-import javax.swing.*;
-import java.awt.*;
+
 import java.io.File;
 import java.io.IOException;
-import java.net.URISyntaxException;
+
 import java.nio.file.Path;
 import java.util.ArrayList;
-import java.util.Arrays;
+
 import java.util.List;
-import java.util.stream.Collectors;
 
 @Plugin(type = Command.class, menuPath = "Plugins>NanoSIMS Stabilizer>stabilize")
 public class StabilizeOpenMims<T extends RealType<T>> implements Command {
@@ -147,9 +136,9 @@ public class StabilizeOpenMims<T extends RealType<T>> implements Command {
         Model modelBilinear = getBilinearModel();
         Model modelNearest = getNearestModel();
         MimsPlus[] openMimsImages = uiinstance.getOpenMassImages();
+
         OpticalFlowEstimator opticalFlowEstimator = new OpticalFlowEstimator();
         List<RandomAccessibleInterval<T>> openImgRai = new ArrayList<>();
-        ImagePlus image = openMimsImages[0];
         int baseChannel = 0;
         for (int index = 0; index < openMimsImages.length; index++) {
             ImagePlus img = openMimsImages[index];
@@ -160,8 +149,8 @@ public class StabilizeOpenMims<T extends RealType<T>> implements Command {
             openImgRai.add(rai);
         }
 
-//         (Img<T>) currentData.getImgPlus();
         long[] dimensions = openImgRai.get(0).dimensionsAsLongArray();
+        statusService.showProgress(0, (int) dimensions[2]);
         NDList outputSequence = new NDList((int) dimensions[2]);
         NDList channelSequence = new NDList(openMimsImages.length);
         for (int channelIndex = 0; channelIndex < openMimsImages.length; channelIndex++) {
@@ -179,9 +168,7 @@ public class StabilizeOpenMims<T extends RealType<T>> implements Command {
             NDArray gtImgArray = outputSequence.get(outputSequence.size() - 1).get(":, :," + baseChannel);
             try {
                 float[] opticalFlowList = opticalFlowEstimator.generateOpticalFlow(gtImgArray, wfImgArray);
-
                 NDArray opticalFlowArray = manager.create(opticalFlowList).reshape(2, dimensions[0], dimensions[1]);
-
                 channelSequence.clear();
                 for (int channelIndex = 0; channelIndex < openMimsImages.length; channelIndex++) {
                     IntervalView<T> wfImgSingleChannel = opService.transform().hyperSliceView(openImgRai.get(channelIndex), 2, sequenceIndex);
@@ -205,24 +192,25 @@ public class StabilizeOpenMims<T extends RealType<T>> implements Command {
         NDArray outputStack = NDArrays.stack(outputSequence, 2);
         for (int i = 0; i < openMimsImages.length; i++) {
             String tile = openMimsImages[i].getTitle();
-            openMimsImages[i].setImage(Util.convertNDArrayToImagePlus(outputStack.get(":, :,:," + i), tile));
+            ImagePlus imagePlus = Util.convertNDArrayToImagePlus(outputStack.get(":, :,:," + i), tile);
+            Util.autoAdjust(imagePlus);
+            openMimsImages[i].setImage(imagePlus);
         }
         statusService.showProgress((int) dimensions[2], (int) dimensions[2]);
-//            Dataset datasettmp = datasetService.create(outputStackImage);
         uiService.showDialog("stabilization finished");
     }
 
 
     public Model getBilinearModel() throws IOException, MalformedModelException {
 
-        Path warpModelPath = Util.getResourcePath("warp_bilinear.zip");
+        Path warpModelPath = Util.getResourcePath("warp_bilinearv2.zip");
         Model model = Model.newInstance("warp", Device.cpu());
         model.load(warpModelPath);
         return model;
     }
 
     public Model getNearestModel() throws IOException, MalformedModelException {
-        Path warpModelPath = Util.getResourcePath("warp_nearest.zip");
+        Path warpModelPath = Util.getResourcePath("warp_nearestv2.zip");
         Model model = Model.newInstance("warp", Device.cpu());
         model.load(warpModelPath);
         return model;

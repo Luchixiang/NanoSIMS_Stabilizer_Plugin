@@ -6,6 +6,9 @@ import ai.djl.ndarray.index.NDIndex;
 import ai.djl.ndarray.types.DataType;
 import ai.djl.ndarray.types.Shape;
 import ij.ImagePlus;
+import ij.process.*;
+import ij.gui.*;
+import ij.measure.*;
 import ij.ImageStack;
 import ij.process.ImageProcessor;
 import net.imglib2.Cursor;
@@ -92,5 +95,55 @@ public class Util {
         }
         ImagePlus imagePlus = new ImagePlus(tile, stack);
         return imagePlus;
+    }
+    public static void autoAdjust(ImagePlus imp) {
+        Calibration cal = imp.getCalibration();
+        final int AUTO_THRESHOLD = 5000;
+        int autoThreshold = 0;
+        imp.setCalibration(null);
+        ImageStatistics stats = imp.getStatistics(); // get uncalibrated stats
+        imp.setCalibration(cal);
+        int limit = stats.pixelCount / 10;
+        int[] histogram = stats.histogram;
+        if (autoThreshold < 10) {
+            autoThreshold = AUTO_THRESHOLD;
+        } else {
+            autoThreshold /= 2;
+        }
+        int threshold = stats.pixelCount / autoThreshold;
+        int i = -1;
+        boolean found = false;
+        int count;
+        do {
+            i++;
+            count = histogram[i];
+            if (count > limit) {
+                count = 0;
+            }
+            found = count > threshold;
+        } while (!found && i < 255);
+        int hmin = i;
+        i = 256;
+        do {
+            i--;
+            count = histogram[i];
+            if (count > limit) {
+                count = 0;
+            }
+            found = count > threshold;
+        } while (!found && i > 0);
+        int hmax = i;
+
+        if (hmax >= hmin) {
+            double min = stats.histMin + hmin * stats.binSize;
+            double max = stats.histMin + hmax * stats.binSize;
+            if (min == max) {
+                min = stats.min;
+                max = stats.max;
+            }
+            imp.setDisplayRange(min, max);
+
+        }
+
     }
 }

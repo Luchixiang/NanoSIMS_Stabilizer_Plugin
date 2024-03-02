@@ -11,6 +11,10 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/com/haibolab/nanosimsStabilize/OpticalFlowEstimator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/haibolab/nanosimsStabilize/OpticalFlowEstimator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/haibolab/nanosimsStabilize/OpticalFlowTranslatorArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/haibolab/nanosimsStabilize/OpticalFlowTranslatorArray.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/haibolab/nanosimsStabilize/StabilizeOpenMims.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/haibolab/nanosimsStabilize/StabilizeOpenMims.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/haibolab/nanosimsStabilize/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/haibolab/nanosimsStabilize/Util.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/raft_model.zip" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/raft_modelv2.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/warp_bilinear.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/warp_nearest.zip" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,22 +47,22 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.34712642" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/img" />
+      <recent name="$PROJECT_DIR$/resources" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/mycompany/imagej" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main" />
       <recent name="$PROJECT_DIR$/src" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/img" />
-      <recent name="$PROJECT_DIR$/src/main/resources" />
-      <recent name="$PROJECT_DIR$/resources" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/mycompany/imagej" />
     </key>
   </component>
   <component name="RunDashboard">

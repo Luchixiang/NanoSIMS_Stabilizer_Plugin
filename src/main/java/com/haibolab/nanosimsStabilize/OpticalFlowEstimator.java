@@ -22,7 +22,7 @@ public class OpticalFlowEstimator {
     private Model optical_model;
 
     public OpticalFlowEstimator() throws IOException, MalformedModelException {
-        Path modelPath = Util.getResourcePath("raft_model.zip");
+        Path modelPath = Util.getResourcePath("raft_modelv2.zip");
         this.optical_model= Model.newInstance("RAFT");
         this.optical_model.load(modelPath);
     }
