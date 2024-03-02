@@ -4,6 +4,7 @@ This repository contains the source code for our NanoSIMS stabilizer ImageJ plug
 
 If you prefer running with Python code, which allows batch processing and GPU acceleration, please refer to https://github.com/Luchixiang/NanoSIMS_Stabilizer_Python. 
 
+For more information, please refer to our [project page](https://www.haibojianglab.com/nanosims-stabilizer). 
 ### Install Plugin
 
 Please note that we don't support macOS < 11.  
@@ -22,6 +23,6 @@ Please note that we don't support macOS < 11.
 
 4. Choose the channel as the baseline channel where the transformation map is calculated and then applied to other channels. Strong signals are recommended. 
 
-   ![image-20240108200232561](./img/channel.png)
+   ![image-20240108200232561](./img/channel.jpg)
 
 5. Correction Done. 

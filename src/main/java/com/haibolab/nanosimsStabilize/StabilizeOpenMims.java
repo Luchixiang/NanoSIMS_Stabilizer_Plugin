@@ -109,7 +109,7 @@ public class StabilizeOpenMims<T extends RealType<T>> implements Command {
             datasetNames[index] = img.getTitle();
         }
         GenericDialog dialog = new GenericDialog("Choose your channel");
-        dialog.addMessage("Choose one channel as baseline. Strong signals are recommended.");
+        dialog.addMessage("Choose one channel as reference (Strong signals are recommended).");
         dialog.addChoice("Selected channel", datasetNames, datasetNames[0]);
         dialog.showDialog();
         if (dialog.wasOKed()) {
