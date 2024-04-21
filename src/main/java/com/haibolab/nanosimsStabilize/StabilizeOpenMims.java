@@ -59,7 +59,7 @@ import java.util.ArrayList;
 
 import java.util.List;
 
-@Plugin(type = Command.class, menuPath = "Plugins>NanoSIMS Stabilizer>stabilize")
+@Plugin(type = Command.class, menuPath = "Plugins>NanoSIMS Stabilizer>Stabilize")
 public class StabilizeOpenMims<T extends RealType<T>> implements Command {
     //
     // Feel free to add more parameters here...
