@@ -7,11 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f49f6ba-24cf-40a6-b181-42c9a151b9ef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/img/openmims.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/haibolab/nanosimsStabilize/StabilizeOpenMimsv2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/openmims.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/channel.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/channel.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/haibolab/nanosimsStabilize/OpticalFlowEstimator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/haibolab/nanosimsStabilize/OpticalFlowEstimator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/haibolab/nanosimsStabilize/StabilizeOpenMims.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/haibolab/nanosimsStabilize/StabilizeOpenMims.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/haibolab/nanosimsStabilize/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/haibolab/nanosimsStabilize/Util.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/raft_modelv2.zip" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/raft_modelv3.2.zip" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

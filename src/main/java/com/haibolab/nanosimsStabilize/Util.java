@@ -18,7 +18,7 @@ import net.imglib2.type.numeric.RealType;
 import net.imglib2.type.numeric.real.FloatType;
 import net.imglib2.view.IntervalView;
 import net.imglib2.view.Views;
-
+import ij.plugin.ImagesToStack;
 import java.awt.image.BufferedImage;
 import java.awt.image.DataBufferByte;
 import java.io.IOException;
@@ -144,6 +144,29 @@ public class Util {
             imp.setDisplayRange(min, max);
 
         }
+
+    }
+    public static NDArray convertMultiFrameImagePlusToNDArray(ImagePlus imp, NDManager manager) {
+//        if (!imp.isStack()) {
+//            ImagesToStack its = new ImagesToStack();
+//            imp = its.convertImagesToStack(imp);
+//        }
+        int numFrames = imp.getStackSize();
+        int width = imp.getWidth();
+        int height = imp.getHeight();
+
+        // Create a large array to hold all frames
+        float[] allPixels = new float[width * height * numFrames];
+
+        for (int i = 1; i <= numFrames; i++) {
+            ImageProcessor ip = imp.getStack().getProcessor(i);
+            float[] framePixels = (float[]) ip.convertToFloatProcessor().getPixels();
+            System.arraycopy(framePixels, 0, allPixels, (i - 1) * width * height, width * height);
+        }
+
+        NDArray array = manager.create(allPixels, new Shape(numFrames, height, width));
+        array = array.transpose(1,2,0);
+        return array;
 
     }
 }

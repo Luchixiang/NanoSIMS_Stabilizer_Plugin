@@ -56,7 +56,6 @@ import java.io.IOException;
 
 import java.nio.file.Path;
 import java.util.ArrayList;
-
 import java.util.List;
 
 @Plugin(type = Command.class, menuPath = "Plugins>NanoSIMS Stabilizer>Stabilize")
@@ -164,6 +163,7 @@ public class StabilizeOpenMims<T extends RealType<T>> implements Command {
             System.out.println("start processing sequence index" + sequenceIndex);
             IntervalView<T> wfImg = opService.transform().hyperSliceView(openImgRai.get(baseChannel), 2, sequenceIndex);
             statusService.showProgress(sequenceIndex, (int) dimensions[2]);
+
             NDArray wfImgArray = Util.intervalViewToNDArray(wfImg, manager);
             NDArray gtImgArray = outputSequence.get(outputSequence.size() - 1).get(":, :," + baseChannel);
             try {
