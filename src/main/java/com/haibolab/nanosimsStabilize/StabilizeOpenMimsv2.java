@@ -60,7 +60,7 @@ import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 
-@Plugin(type = Command.class, menuPath = "Plugins>NanoSIMS Stabilizer>Stabilizev2")
+@Plugin(type = Command.class, menuPath = "Plugins>NanoSIMS Stabilizer>Stabilize")
 public class StabilizeOpenMimsv2<T extends RealType<T>> implements Command {
     //
     // Feel free to add more parameters here...
@@ -262,7 +262,7 @@ public class StabilizeOpenMimsv2<T extends RealType<T>> implements Command {
             ij.ui().show(dataset);
 
             // invoke the plugin
-            ij.command().run(StabilizeOpenMims.class, true);
+            ij.command().run(StabilizeOpenMimsv2.class, true);
         }
     }
 }

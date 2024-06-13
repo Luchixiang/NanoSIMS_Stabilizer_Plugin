@@ -21,8 +21,8 @@ Please note that we don't support macOS before 11.
 
 3. Click plugin -> NanoSIMS Stabilizer -> stabilize
 
-4. Choose the channel as the reference channel where the transformation map is calculated and then applied to other channels. Strong signals are recommended.  
-The summation denotes using the summation of all channels as reference channel. By default, we apply nearest interpolation to weak signal channels, but it may change the overall signals. Check the box if you want to apply bilinear interpolation to all channels.
+4. Choose the channel as the reference channel where the transformation map is calculated and then applied to other channels. Strong signals are recommended. The summation denotes using the summation of all channels as reference channel (suitable for datasets that all channels are weak).  
+By default, we apply nearest interpolation to weak signal channels, but it may change the overall signals. Check the box if you want to apply bilinear interpolation to all channels.
 
    ![image-20240108200232561](./img/channel.jpg)
 

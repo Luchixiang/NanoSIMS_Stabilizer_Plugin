@@ -7,14 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f49f6ba-24cf-40a6-b181-42c9a151b9ef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/haibolab/nanosimsStabilize/StabilizeOpenMimsv2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/channel.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/channel.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/haibolab/nanosimsStabilize/OpticalFlowEstimator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/haibolab/nanosimsStabilize/OpticalFlowEstimator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/haibolab/nanosimsStabilize/StabilizeOpenMims.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/haibolab/nanosimsStabilize/StabilizeOpenMims.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/haibolab/nanosimsStabilize/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/haibolab/nanosimsStabilize/Util.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/raft_modelv2.zip" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/raft_modelv3.2.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/haibolab/nanosimsStabilize/StabilizeOpenMims.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/haibolab/nanosimsStabilize/StabilizeOpenMimsv2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/haibolab/nanosimsStabilize/StabilizeOpenMimsv2.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +43,7 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.34712642" />
