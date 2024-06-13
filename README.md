@@ -9,7 +9,7 @@ For more information, please refer to our [project page](https://www.haibojiangl
 
 Please note that we don't support macOS before 11.  
 
-1. Download the plugin jar files through the [link](https://connecthkuhk-my.sharepoint.com/:f:/g/personal/u3590540_connect_hku_hk/Ejyw6saUUttCkM6umHp4L5YB7MmQ9e3_fSJ8PNjlZiCgUg?e=Y4krzx) according to your system (Linux, macOS, Windows). 
+1. Download the plugin jar files through the [link](https://zenodo.org/records/11638194) according to your system (Linux, macOS, Windows). 
 3. move all the jar files into the Fiji plugins folder and restart the ImageJ finish the installation.
 
 ![image-20230822121808072](./img/install.png)
