@@ -1,6 +1,6 @@
 ## NanoSIMS Stabilizer manual
 
-This repository contains the source code for our NanoSIMS stabilizer ImageJ plugin. 
+This repository contains the source code for our NanoSIMS stabilizer ImageJ plugin ([Tool to Resolve Distortions in Elemental and Isotopic Imaging](https://pubs.acs.org/doi/10.1021/jacs.4c05384)). 
 
 If you prefer running with Python code, which allows batch processing and GPU acceleration, please refer to https://github.com/Luchixiang/NanoSIMS_Stabilizer_Python. 
 
